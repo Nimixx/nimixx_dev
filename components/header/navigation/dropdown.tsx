@@ -26,6 +26,10 @@ export function DropDown({ closeDropdown, isDropdownOpen }: DropDownProps) {
       })
    }, [isDropdownOpen])
 
+   const handleLinkClick = () => {
+      closeDropdown() // Close the dropdown when a link is clicked
+   }
+
    return (
       <nav
          ref={dropdownRef}
@@ -33,7 +37,7 @@ export function DropDown({ closeDropdown, isDropdownOpen }: DropDownProps) {
          onMouseLeave={closeDropdown}
       >
          <section className="h-64 w-48 rounded-md bg-gradient-to-b from-primary_dark to-primary_light">
-            <Link href="/projects">
+            <Link onClick={handleLinkClick} href="/nazerem-se">
                <article className="flex h-full w-full flex-col items-start justify-end gap-4 p-4">
                   <Icon className="text-4xl text-teal-400" icon={<FastFood />} />
                   <h3 className="text-xl font-bold">Nažeremse.se</h3>
@@ -53,23 +57,34 @@ export function DropDown({ closeDropdown, isDropdownOpen }: DropDownProps) {
             </Link>
             <ul className="w-full space-y-2">
                <li>
-                  <Link href="/projects" className="flex items-center gap-2 hover:text-accent_2 transition">
+                  <Link
+                     href="/projects"
+                     className="flex items-center gap-2 transition hover:text-accent_2"
+                  >
                      <Icon className="text-accent_2" icon={<ArrowRight />} /> Websites
                   </Link>
                </li>
                <li>
-                  <Link href="/projects" className="flex items-center gap-2 hover:text-accent_2 transition">
+                  <Link
+                     href="/projects"
+                     className="flex items-center gap-2 transition hover:text-accent_2"
+                  >
                      <Icon className="text-accent_2" icon={<ArrowRight />} /> Components
                   </Link>
                </li>
                <li>
-                  <Link href="/projects" className="flex items-center gap-2 hover:text-accent_2 transition">
-                     <Icon className="text-accent_2" icon={<ArrowRight />} /> Graffic &
-                     Design
+                  <Link
+                     href="/projects"
+                     className="flex items-center gap-2 transition hover:text-accent_2"
+                  >
+                     <Icon className="text-accent_2" icon={<ArrowRight />} /> Graffic & Design
                   </Link>
                </li>
                <li>
-                  <Link href="/projects" className="flex items-center gap-2 hover:text-accent_2 transition">
+                  <Link
+                     href="/projects"
+                     className="flex items-center gap-2 transition hover:text-accent_2"
+                  >
                      <Icon className="text-accent_2" icon={<ArrowRight />} /> Others
                   </Link>
                </li>
