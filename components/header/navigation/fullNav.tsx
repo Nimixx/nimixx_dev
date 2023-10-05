@@ -16,7 +16,7 @@ export function FullNav() {
    ]
 
    return (
-      <ul className="flex items-center gap-4">
+      <ul className="items-center gap-4 hidden lg:flex">
          {links.map((link, index) => (
             <li key={index}>
                <Link

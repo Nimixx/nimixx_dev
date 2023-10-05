@@ -1,13 +1,14 @@
 'use client'
 
+import { twMerge as tw } from 'tailwind-merge'
 import Link from 'next/link'
 import { Github, X, LinkedIn, Youtube } from '../svgs'
 
 type SocialIconProps = {
-   iconSize: number
+   className?: string
 }
 
-export function SocialIcons({ iconSize }: SocialIconProps) {
+export function SocialIcons({className }: SocialIconProps) {
    const socialIcons = [
       { icon: <Github />, href: 'https://github.com/' },
       { icon: <X />, href: 'https://example.com/' },
@@ -19,7 +20,10 @@ export function SocialIcons({ iconSize }: SocialIconProps) {
       <ul className="flex items-center gap-4 text-accent_1">
          {socialIcons.map((socialIcon, index) => (
             <li key={index}>
-               <Link href={socialIcon.href} className="transition hover:text-accent_3">
+               <Link
+                  href={socialIcon.href}
+                  className={tw('transition hover:text-accent_3', className)}
+               >
                   {socialIcon.icon}
                </Link>
             </li>

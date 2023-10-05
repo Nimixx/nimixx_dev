@@ -6,5 +6,5 @@ type ContentProps = {
 }
 
 export function Content({ children, className }: ContentProps) {
-   return <section className={tw('mx-auto w-3/4', className)}>{children}</section>
+   return <section className={tw('mx-auto lg:w-3/4 px-4 lg:px-0', className)}>{children}</section>
 }
