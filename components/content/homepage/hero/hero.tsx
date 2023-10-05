@@ -1,12 +1,11 @@
 import { Content } from '@/components/layouts/content'
 import Image from 'next/image'
-import heroPic from '@/public/images/hero.svg'
 
 export function Hero() {
    return (
       <Content className="flex min-h-[45rem] items-center justify-between">
-         <article className='flex flex-col justify-center items-start gap-4'>
-            <h1 className="text-8xl font-extrabold uppercase">
+         <article className="flex flex-col items-start justify-center gap-4">
+            <h1 className="max-w-xl text-8xl font-extrabold uppercase">
                UI&UX
                <br />
                FrontEnd
@@ -18,11 +17,7 @@ export function Hero() {
                with exceptional experiences.
             </p>
          </article>
-         <Image
-      src={heroPic}
-      alt="Picture of the author"
-      width={700}
-    />
+         <Image src="./images/hero.svg" alt="Picture of the author" width={800} height={600} />
       </Content>
    )
 }

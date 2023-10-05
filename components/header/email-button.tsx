@@ -3,7 +3,7 @@
 import { useToast } from '@/components/ui/use-toast'
 import { useState } from 'react'
 import { Button } from '../ui/button'
-import { Icon } from '@iconify/react'
+import { EmailPlus, EmailLock, Success } from '../svgs'
 
 export function EmailBtn() {
    const { toast } = useToast()
@@ -14,11 +14,7 @@ export function EmailBtn() {
       toast({
          description: (
             <div className="flex items-center">
-               <Icon
-                  icon="clarity:success-standard-line"
-                  fontSize={18}
-                  className="mr-2 text-lime-400"
-               />
+               <Success className="mr-2 text-xl text-lime-400" />
                <span>Email was copied to clipboard!</span>
             </div>
          )
@@ -37,13 +33,13 @@ export function EmailBtn() {
          size="sm"
          onClick={copyToClipboard}
          disabled={isCopied}
-         className="bg-secondary text-black hover:bg-secondary_hover"
+         className="hover:bg-secondary_hover bg-secondary text-black"
       >
-         <Icon
-            icon={isCopied ? 'mdi:email-lock' : 'mdi:email-plus'}
-            fontSize={18}
-            className="mr-2"
-         />
+         {isCopied ? (
+            <EmailLock className="mr-2 text-xl" />
+         ) : (
+            <EmailPlus className="mr-2 text-xl" />
+         )}
          Contact me
       </Button>
    )

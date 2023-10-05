@@ -1,7 +1,7 @@
 'use client'
 
 import Link from 'next/link'
-import { Icon } from '@iconify/react'
+import { Github, X, LinkedIn, Youtube } from '../svgs'
 
 type SocialIconProps = {
    iconSize: number
@@ -9,10 +9,10 @@ type SocialIconProps = {
 
 export function SocialIcons({ iconSize }: SocialIconProps) {
    const socialIcons = [
-      { icon: 'simple-icons:github', href: 'https://github.com/' },
-      { icon: 'simple-icons:x', href: 'https://example.com/' },
-      { icon: 'simple-icons:linkedin', href: 'https://www.linkedin.com/' },
-      { icon: 'simple-icons:youtube', href: 'https://www.youtube.com/' }
+      { icon: <Github />, href: 'https://github.com/' },
+      { icon: <X />, href: 'https://example.com/' },
+      { icon: <LinkedIn />, href: 'https://www.linkedin.com/' },
+      { icon: <Youtube />, href: 'https://www.youtube.com/' }
    ]
 
    return (
@@ -20,7 +20,7 @@ export function SocialIcons({ iconSize }: SocialIconProps) {
          {socialIcons.map((socialIcon, index) => (
             <li key={index}>
                <Link href={socialIcon.href} className="transition hover:text-accent_3">
-                  <Icon icon={socialIcon.icon} fontSize={iconSize} />
+                  {socialIcon.icon}
                </Link>
             </li>
          ))}
