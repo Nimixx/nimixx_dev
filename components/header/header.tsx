@@ -1,5 +1,5 @@
 import { SiteName } from './siteName'
-import { FullNav } from './navigation/fullNav'
+import { FullNav } from './navigation/full-nav'
 import { SocialIcons } from '../ui/social-icon'
 import { EmailBtn } from './email-button'
 
