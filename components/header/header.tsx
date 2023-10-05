@@ -1,6 +1,7 @@
 import { SiteName } from './siteName'
 import { FullNav } from './navigation/fullNav'
 import { SocialIcons } from '../ui/social-icon'
+import { EmailBtn } from './email-button'
 
 export function Header() {
    return (
@@ -10,7 +11,10 @@ export function Header() {
                <SiteName SiteName="nimixx.dev" />
                <FullNav />
             </nav>
-            <SocialIcons />
+            <section className="flex items-center gap-10">
+               <SocialIcons iconSize={18} />
+               <EmailBtn />
+            </section>
          </section>
       </header>
    )
