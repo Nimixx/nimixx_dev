@@ -1,7 +1,10 @@
 import React from 'react'
+import { Hero } from '@/components/content/homepage/hero/hero'
 
 export default function page() {
-  return (
-    <div>Homepage</div>
-  )
+   return (
+      <>
+         <Hero />
+      </>
+   )
 }

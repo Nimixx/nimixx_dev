@@ -9,8 +9,8 @@ export function FullNav() {
    const currentPath = path()
 
    const links = [
-      { href: '/', label: 'Domů' },
-      { href: '/projects', label: 'Projekty' },
+      { href: '/', label: 'Home' },
+      { href: '/projects', label: 'Work' },
       { href: '/blog', label: 'Blog' },
       { href: '/bio', label: 'Bio' }
    ]
