@@ -2,8 +2,8 @@ import './globals.css'
 
 import type { Metadata } from 'next'
 import { Open_Sans } from 'next/font/google'
-
 import { Header } from '../components/header/header'
+import { Toaster } from '@/components/ui/toaster'
 
 const open_sans = Open_Sans({ subsets: ['latin'] })
 
@@ -22,6 +22,7 @@ export default function RootLayout({ children }: LayoutProps) {
          <body className={`${open_sans.className} bg-primary text-primary_text`}>
             <Header />
             {children}
+            <Toaster />
          </body>
       </html>
    )

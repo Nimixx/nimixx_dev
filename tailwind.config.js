@@ -26,7 +26,7 @@ module.exports = {
         accent_2: 'rgb(var(--color-accent2) / <alpha-value>)',
         accent_3: 'rgb(var(--color-accent3) / <alpha-value>)',
         succes: 'rgb(var(--color-success) / <alpha-value>)',
-        hero_ball: 'rgb(var(--color-hero-ball) / <alpha-value>)',
+        secondary: 'rgb(var(--color-hero-ball) / <alpha-value>)',
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
@@ -35,10 +35,6 @@ module.exports = {
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
-        },
-        secondary: {
-          DEFAULT: "hsl(var(--secondary))",
-          foreground: "hsl(var(--secondary-foreground))",
         },
         destructive: {
           DEFAULT: "hsl(var(--destructive))",

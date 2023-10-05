@@ -22,7 +22,7 @@ export function FullNav() {
                <Link
                   className={tw(
                      'text-secondary_text transition hover:text-accent_3',
-                     currentPath === link.href && 'text-primary_text'
+                     currentPath === link.href && 'text-secondary hover:text-secondary underline underline-offset-8'
                   )}
                   href={link.href}
                >
