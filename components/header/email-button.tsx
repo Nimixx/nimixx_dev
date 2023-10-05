@@ -37,7 +37,7 @@ export function EmailBtn() {
          size="sm"
          onClick={copyToClipboard}
          disabled={isCopied}
-         className="bg-secondary text-black"
+         className="bg-secondary text-black hover:bg-secondary_hover"
       >
          <Icon
             icon={isCopied ? 'mdi:email-lock' : 'mdi:email-plus'}
