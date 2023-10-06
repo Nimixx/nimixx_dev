@@ -11,7 +11,6 @@ import { DropDown } from './dropdown'
 export function FullNav() {
    const currentPath = path()
    const links = [
-      { href: '/blog', label: 'Blog' },
       { href: '/bio', label: 'Bio' }
    ]
 

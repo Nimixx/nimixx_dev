@@ -16,7 +16,6 @@ export function ProjectImage({ src, alt, shoutout, shoutoutLink }: ImageProps) {
             src={src}
             alt={alt}
             quality={20}
-            layout="responsive"
             width={320}
             height={320}
             placeholder="blur"

@@ -10,7 +10,8 @@ import {
    Github,
    LinkIcon,
    RadixUi,
-   ReactQuery
+   ReactQuery,
+   Galery
 } from '@/components/svgs'
 
 import KitchenPic from '@/public/images/nazerme_se.jpg'
@@ -21,7 +22,7 @@ import Content from '@/app/projects/nazerem-se/nazerem-se.mdx'
 export default function page() {
    const [links] = useState([
       { icon: <Github />, href: '/' },
-      { icon: <LinkIcon />, href: '/' }
+      { icon: <LinkIcon />, href: '/' },
    ])
 
    const [icons] = useState([
@@ -46,7 +47,7 @@ export default function page() {
                      shoutoutLink="https://unsplash.com/@anthonydelanoix?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
                   />
                   <IconAside icons={icons} />
-                  <IconAside icons={links} forLinks />
+                  <IconAside icons={links} forLinks galery />
                </aside>
                <section className="w-full space-y-4 rounded-lg border border-primary_light/50 bg-primary_light/20 p-5">
                   <Content />

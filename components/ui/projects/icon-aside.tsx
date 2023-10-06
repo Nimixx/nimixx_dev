@@ -1,5 +1,7 @@
 import Link from 'next/link'
 import { Icon } from '@/components/ui/icon'
+import { Button } from '../button'
+import { Galery } from '@/components/svgs'
 
 type IconObject = {
    icon: React.ReactNode
@@ -9,17 +11,21 @@ type IconObject = {
 type IconListProps = {
    icons: IconObject[]
    forLinks?: boolean
+   galery?: boolean
 }
 
-export function IconAside({ icons, forLinks }: IconListProps) {
+export function IconAside({ icons, forLinks, galery }: IconListProps) {
    return (
-      <div className="rounded-md border border-primary_light/50 bg-primary_light/20 px-4 py-3 inline-block">
+      <div className="flex items-center rounded-md border border-primary_light/50 bg-primary_light/20 px-4 py-3">
          <ul className="flex space-x-4">
             {icons.map((icon, index) => (
                <li key={index}>
                   {forLinks && icon.href ? (
                      <Link href={icon.href}>
-                        <Icon icon={icon.icon} className="text-2xl hover:text-primary_text text-secondary_text transition" />
+                        <Icon
+                           icon={icon.icon}
+                           className="text-2xl text-secondary_text transition hover:text-primary_text"
+                        />
                      </Link>
                   ) : (
                      <Icon icon={icon.icon} className="text-2xl" />
@@ -27,6 +33,11 @@ export function IconAside({ icons, forLinks }: IconListProps) {
                </li>
             ))}
          </ul>
+         {galery && (
+            <Button variant="link" size="sm" className="text-sm" disabled>
+               <Icon icon={<Galery />} className="text-2xl" />
+            </Button>
+         )}
       </div>
    )
 }

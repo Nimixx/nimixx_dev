@@ -33,7 +33,7 @@ export function DropDown({ closeDropdown, isDropdownOpen }: DropDownProps) {
    return (
       <nav
          ref={dropdownRef}
-         className="absolute left-1/2 top-7 flex h-72 w-96 -translate-x-1/2 -translate-y-2 transform justify-between gap-4 rounded-md border border-primary_light/50 bg-primary_dark/50 p-4 opacity-0 backdrop-blur-lg z-50"
+         className="absolute left-1/2 top-7 flex h-72 w-96 -translate-x-1/2 -translate-y-2 transform justify-between gap-4 rounded-md border border-primary_light/50 bg-primary_dark/80 p-4 opacity-0 backdrop-blur-lg z-50"
          onMouseLeave={closeDropdown}
       >
          <section className="h-64 w-48 rounded-md bg-gradient-to-b from-primary_dark to-primary_light">
