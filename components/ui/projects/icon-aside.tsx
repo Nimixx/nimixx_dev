@@ -2,9 +2,6 @@
 
 import Link from 'next/link'
 import { Icon } from '@/components/ui/icon'
-import { Button } from '../button'
-import { Galery } from '@/components/svgs'
-import { useAlertToast } from '@/components/hooks/useAlertToast'
 import { ProjectGalery } from './project-galery'
 
 type IconObject = {
@@ -18,10 +15,9 @@ type IconListProps = {
    galery?: boolean
 }
 
-
 export function IconAside({ icons, forLinks, galery }: IconListProps) {
    return (
-      <div className="flex items-center rounded-md border border-primary_light/50 bg-primary_light/20 px-4 py-3">
+      <div className="flex items-center rounded-md border border-primary_light/50 bg-primary_light/20 px-4 py-3 w-64">
          <ul className="flex space-x-4">
             {icons.map((icon, index) => (
                <li key={index}>

@@ -48,7 +48,7 @@ export function DropDown({ closeDropdown, isDropdownOpen }: DropDownProps) {
             </Link>
          </section>
          <section className="flex w-full flex-col gap-4">
-            <Link href="/nimixx" className="h-32 w-full rounded-md bg-primary_light/20">
+            <Link onClick={handleLinkClick} href="/projects/nimixx" className="h-32 w-full rounded-md bg-primary_light/20">
                <article className="flex h-full w-full flex-col items-start justify-end gap-2 p-4">
                   <Icon className="text-xl text-amber-400" icon={<CodeSquare />} />
                   <h3 className="text-lg font-bold">Nimixx.dev</h3>
@@ -61,7 +61,7 @@ export function DropDown({ closeDropdown, isDropdownOpen }: DropDownProps) {
                      href="/projects"
                      className="flex items-center gap-2 transition hover:text-accent_2"
                   >
-                     <Icon className="text-accent_2" icon={<ArrowRight />} /> Websites
+                     <Icon className="text-accent_2" icon={<ArrowRight />} /> Websites & Apps
                   </Link>
                </li>
                <li>
