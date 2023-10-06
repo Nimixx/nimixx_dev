@@ -11,7 +11,6 @@ import {
    LinkIcon,
    RadixUi,
    ReactQuery,
-   Galery
 } from '@/components/svgs'
 
 import KitchenPic from '@/public/images/nazerme_se.jpg'

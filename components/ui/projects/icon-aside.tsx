@@ -1,7 +1,11 @@
+'use clinet'
+
 import Link from 'next/link'
 import { Icon } from '@/components/ui/icon'
 import { Button } from '../button'
 import { Galery } from '@/components/svgs'
+import { useAlertToast } from '@/components/hooks/useAlertToast'
+import { ProjectGalery } from './project-galery'
 
 type IconObject = {
    icon: React.ReactNode
@@ -13,6 +17,7 @@ type IconListProps = {
    forLinks?: boolean
    galery?: boolean
 }
+
 
 export function IconAside({ icons, forLinks, galery }: IconListProps) {
    return (
@@ -33,11 +38,7 @@ export function IconAside({ icons, forLinks, galery }: IconListProps) {
                </li>
             ))}
          </ul>
-         {galery && (
-            <Button variant="link" size="sm" className="text-sm" disabled>
-               <Icon icon={<Galery />} className="text-2xl" />
-            </Button>
-         )}
+         {galery && <ProjectGalery />}
       </div>
    )
 }

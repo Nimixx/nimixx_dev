@@ -1,24 +1,20 @@
 'use client'
 
-import { useToast } from '@/components/ui/use-toast'
 import { useState } from 'react'
 import { Button } from '../ui/button'
-import { EmailPlus, EmailLock, Success } from '../svgs'
+import { EmailPlus, EmailLock } from '../svgs'
+import { useSuccessToast } from '../hooks/useSuccessToast'
 
 export function EmailBtn() {
-   const { toast } = useToast()
+   const { successToast } = useSuccessToast()
+
    const email = 'tadeas.thelen@proton.me'
    const [isCopied, setIsCopied] = useState(false)
 
    const copyToClipboard = () => {
-      toast({
-         description: (
-            <div className="flex items-center">
-               <Success className="mr-2 text-xl text-lime-400" />
-               <span>Email was copied to clipboard!</span>
-            </div>
-         )
-      })
+      const message = 'Email was copied to clipboard!'
+      successToast({ message})
+    
       navigator.clipboard.writeText(email)
       console.log('copied')
       setIsCopied(!isCopied)
