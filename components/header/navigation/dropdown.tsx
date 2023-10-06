@@ -37,7 +37,7 @@ export function DropDown({ closeDropdown, isDropdownOpen }: DropDownProps) {
          onMouseLeave={closeDropdown}
       >
          <section className="h-64 w-48 rounded-md bg-gradient-to-b from-primary_dark to-primary_light">
-            <Link onClick={handleLinkClick} href="/nazerem-se">
+            <Link onClick={handleLinkClick} href="/projects/nazerem-se">
                <article className="flex h-full w-full flex-col items-start justify-end gap-4 p-4">
                   <Icon className="text-4xl text-teal-400" icon={<FastFood />} />
                   <h3 className="text-xl font-bold">Nažeremse.se</h3>
