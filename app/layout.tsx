@@ -18,8 +18,8 @@ type LayoutProps = {
 
 export default function RootLayout({ children }: LayoutProps) {
    return (
-      <html lang="en">
-         <body className={`${open_sans.className} bg-primary text-primary_text`}>
+      <html lang="en" className='scroll-smooth'>
+         <body className={`${open_sans.className} bg-gradient-to-b from-primary min-h-screen to-primary_dark text-primary_text`}>
             <Header />
             {children}
             <Toaster />
