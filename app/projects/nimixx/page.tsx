@@ -2,19 +2,13 @@
 
 import React, { useState } from 'react'
 import { Projects } from '@/components/layouts/project'
-import {
-   NextJs,
-   Typescript,
-   TailwindCSS,
-   Github,
-   LinkIcon,
-   RadixUi,
-   Mdx
-} from '@/components/svgs'
+import { NextJs, Typescript, TailwindCSS, Github, LinkIcon, RadixUi, Mdx } from '@/components/svgs'
 
 import DevPick from '@/public/images/night_develop.jpg'
 import { ProjectImage } from '@/components/ui/projects/project-image'
 import { IconAside } from '@/components/ui/projects/icon-aside'
+import MDXContent from '@/content/projects/nimixx.mdx'
+import { ProjectRoadmap } from '@/components/ui/projects/Project-Roadmap'
 
 export default function page() {
    const [links] = useState([
@@ -27,8 +21,14 @@ export default function page() {
       { icon: <Typescript /> },
       { icon: <TailwindCSS /> },
       { icon: <RadixUi /> },
-      { icon: <Mdx /> },
+      { icon: <Mdx /> }
    ])
+
+   const items = [
+      { text: 'Build project page with mdx & reuseable layouts', isChecked: true },
+      { text: 'Implement issue tracking with git repo', isChecked: false },
+      { text: 'Address bugs and issues', isChecked: false }
+   ]
 
    return (
       <Projects className="mx-auto lg:w-3/5">
@@ -37,6 +37,8 @@ export default function page() {
                <aside className="sticky top-10 h-96 space-y-4">
                   <h1 className="text-2xl font-extrabold uppercase">Nimixx.dev</h1>
                   <ProjectImage
+                     width={255}
+                     height={60}
                      src={DevPick}
                      alt="Nažerem.se"
                      shoutout="Unseen Studio"
@@ -46,12 +48,11 @@ export default function page() {
                   <IconAside icons={links} forLinks galery />
                </aside>
                <section className="w-full space-y-4 rounded-lg border border-primary_light/50 bg-primary_light/20 p-5">
-
+                  <MDXContent />
+                  <ProjectRoadmap items={items} />
                </section>
             </article>
          </section>
       </Projects>
    )
 }
-
-  
