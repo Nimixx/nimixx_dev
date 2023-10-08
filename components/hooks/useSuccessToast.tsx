@@ -1,5 +1,5 @@
 import { useToast } from '@/components/ui/use-toast'
-import { Icon } from '../svgs/Icon'
+import { Icon } from '../ui/Icon'
 
 type AlertToastProps = {
    message: string

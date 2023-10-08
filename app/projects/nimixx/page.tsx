@@ -8,20 +8,19 @@ import { ProjectImage } from '@/components/ui/projects/project-image'
 import { IconAside } from '@/components/ui/projects/icon-aside'
 import MDXContent from '@/content/projects/nimixx.mdx'
 import { ProjectRoadmap } from '@/components/ui/projects/Project-Roadmap'
-import { Icon } from '@/components/svgs/Icon'
 
 export default function page() {
    const [links] = useState([
-      { icon: <Icon name="Github" className='w-6 h-6' />, href: '/' },
-      { icon: <Icon name="LinkIcon" className='w-6 h-6' />, href: '/' }
+      { icon: 'Github', href: '/' },
+      { icon: 'LinkIcon', href: '/' }
    ])
 
    const [icons] = useState([
-      { icon: <Icon name="NextJs" className='w-6 h-6' /> },
-      { icon: <Icon name="Typescript" className='w-6 h-6'  /> },
-      { icon: <Icon name="TailwindCSS" className='w-6 h-6' /> },
-      { icon: <Icon name="RadixUi" className='w-6 h-6' />  },
-      { icon: <Icon name="Mdx" className='w-6 h-6' /> }
+      { icon: 'NextJs' },
+      { icon: 'Typescript' },
+      { icon: 'TailwindCSS' },
+      { icon: 'RadixUi' },
+      { icon: 'Mdx' }
    ])
 
    const items = [

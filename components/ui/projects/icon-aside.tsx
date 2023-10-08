@@ -1,7 +1,7 @@
 'use clinet'
 
 import Link from 'next/link'
-import { Icon } from '@/components/ui/icon'
+import { Icon } from '../Icon'
 import { ProjectGalery } from './project-galery'
 
 type IconObject = {
@@ -24,12 +24,12 @@ export function IconAside({ icons, forLinks, galery }: IconListProps) {
                   {forLinks && icon.href ? (
                      <Link href={icon.href}>
                         <Icon
-                           icon={icon.icon}
-                           className="text-2xl text-secondary_text transition hover:text-primary_text"
+                           name={icon.icon}
+                           className="w-6 h-6 text-secondary_text transition hover:text-primary_text"
                         />
                      </Link>
                   ) : (
-                     <Icon icon={icon.icon} className="text-2xl" />
+                     <Icon name={icon.icon} className="w-6 h-6" />
                   )}
                </li>
             ))}

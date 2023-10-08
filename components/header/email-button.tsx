@@ -2,8 +2,8 @@
 
 import { useState } from 'react'
 import { Button } from '../ui/button'
-import { EmailPlus, EmailLock } from '../svgs'
 import { useSuccessToast } from '../hooks/useSuccessToast'
+import { Icon } from '../ui/Icon'
 
 export function EmailBtn() {
    const { successToast } = useSuccessToast()
@@ -32,9 +32,9 @@ export function EmailBtn() {
          className="hover:bg-secondary_hover bg-secondary text-black"
       >
          {isCopied ? (
-            <EmailLock className="mr-2 text-xl" />
+            <Icon name="EmailLock" className="mr-2 w-5 h-5" />
          ) : (
-            <EmailPlus className="mr-2 text-xl" />
+            <Icon name="EmailPlus" className="mr-2 w-5 h-5" />
          )}
          Contact me
       </Button>

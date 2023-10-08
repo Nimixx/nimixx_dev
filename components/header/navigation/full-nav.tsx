@@ -4,15 +4,13 @@ import { useState } from 'react'
 import Link from 'next/link'
 import { twMerge as tw } from 'tailwind-merge'
 import { usePathname as path } from 'next/navigation'
-import { ArrowDown } from '@/components/svgs'
+import { Icon } from '@/components/ui/Icon'
 import { Button } from '@/components/ui/button'
 import { DropDown } from './dropdown'
 
 export function FullNav() {
    const currentPath = path()
-   const links = [
-      { href: '/bio', label: 'Bio' }
-   ]
+   const links = [{ href: '/bio', label: 'Bio' }]
 
    const [isWorkOpen, setIsWorkOpen] = useState(false)
 
@@ -34,7 +32,8 @@ export function FullNav() {
                onMouseEnter={handleWorkClick}
             >
                Work{' '}
-               <ArrowDown
+               <Icon
+                  name="ArrowDown"
                   className={`transition-transform ${isWorkOpen ? 'rotate-180' : 'rotate-0'}`}
                />
             </Button>

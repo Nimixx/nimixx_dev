@@ -1,6 +1,6 @@
 import React from 'react'
 import { Button } from '../button'
-import { Icon } from '@/components/svgs/Icon'
+import { Icon } from '../Icon'
 import { useAlertToast } from '@/components/hooks/useAlertToast'
 
 export function ProjectGalery() {

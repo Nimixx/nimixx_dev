@@ -3,8 +3,7 @@
 import { useRef } from 'react'
 import Link from 'next/link'
 import { useClickOutside } from '@/components/hooks/useClickOutside'
-import { ArrowRight, FastFood, CodeSquare } from '@/components/svgs'
-import { Icon } from '@/components/ui/icon'
+import { Icon } from '@/components/ui/Icon'
 import { useEffect } from 'react'
 import gsap from 'gsap'
 
@@ -39,7 +38,7 @@ export function DropDown({ closeDropdown, isDropdownOpen }: DropDownProps) {
          <section className="h-64 w-48 rounded-md bg-gradient-to-b from-primary_dark to-primary_light">
             <Link onClick={handleLinkClick} href="/projects/nazerem-se">
                <article className="flex h-full w-full flex-col items-start justify-end gap-4 p-4">
-                  <Icon className="text-4xl text-teal-400" icon={<FastFood />} />
+                  <Icon className="w-8 h-8 text-teal-400" name="FastFood" />
                   <h3 className="text-xl font-bold">Nažeremse.se</h3>
                   <p className="text-secondary_text">
                      Small fullstuck app fro collect recipes and more...
@@ -50,7 +49,7 @@ export function DropDown({ closeDropdown, isDropdownOpen }: DropDownProps) {
          <section className="flex w-full flex-col gap-4">
             <Link onClick={handleLinkClick} href="/projects/nimixx" className="h-32 w-full rounded-md bg-primary_light/20">
                <article className="flex h-full w-full flex-col items-start justify-end gap-2 p-4">
-                  <Icon className="text-xl text-amber-400" icon={<CodeSquare />} />
+                  <Icon className="w-6 h-6 text-amber-400" name="CodeSquare"/>
                   <h3 className="text-lg font-bold">Nimixx.dev</h3>
                   <p className="text-sm text-secondary_text">Small personal app</p>
                </article>
@@ -61,7 +60,7 @@ export function DropDown({ closeDropdown, isDropdownOpen }: DropDownProps) {
                      href="/projects"
                      className="flex items-center gap-2 transition hover:text-accent_2"
                   >
-                     <Icon className="text-accent_2" icon={<ArrowRight />} /> Websites & Apps
+                     <Icon className="text-accent_2" name="ArrowRight" /> Websites & Apps
                   </Link>
                </li>
                <li>
@@ -69,7 +68,7 @@ export function DropDown({ closeDropdown, isDropdownOpen }: DropDownProps) {
                      href="/projects"
                      className="flex items-center gap-2 transition hover:text-accent_2"
                   >
-                     <Icon className="text-accent_2" icon={<ArrowRight />} /> Components
+                     <Icon className="text-accent_2" name="ArrowRight" /> Components
                   </Link>
                </li>
                <li>
@@ -77,7 +76,7 @@ export function DropDown({ closeDropdown, isDropdownOpen }: DropDownProps) {
                      href="/projects"
                      className="flex items-center gap-2 transition hover:text-accent_2"
                   >
-                     <Icon className="text-accent_2" icon={<ArrowRight />} /> Graffic & Design
+                     <Icon className="text-accent_2" name="ArrowRight" /> Graffic & Design
                   </Link>
                </li>
                <li>
@@ -85,7 +84,7 @@ export function DropDown({ closeDropdown, isDropdownOpen }: DropDownProps) {
                      href="/projects"
                      className="flex items-center gap-2 transition hover:text-accent_2"
                   >
-                     <Icon className="text-accent_2" icon={<ArrowRight />} /> Others
+                     <Icon className="text-accent_2" name="ArrowRight" /> Others
                   </Link>
                </li>
             </ul>

@@ -2,16 +2,6 @@
 
 import React, { useState } from 'react'
 import { Projects } from '@/components/layouts/project'
-import {
-   NextJs,
-   Typescript,
-   TailwindCSS,
-   Github,
-   LinkIcon,
-   RadixUi,
-   ReactQuery,
-   PlanetScale
-} from '@/components/svgs'
 
 import KitchenPic from '@/public/images/nazerme_se.jpg'
 
@@ -23,17 +13,17 @@ import { ProjectRoadmap } from '@/components/ui/projects/Project-Roadmap'
 
 export default function page() {
    const [links] = useState([
-      { icon: <Github />, href: '/' },
-      { icon: <LinkIcon />, href: '/' }
+      { icon: 'Github', href: '/' },
+      { icon: 'LinkIcon', href: '/' }
    ])
 
    const [icons] = useState([
-      { icon: <NextJs /> },
-      { icon: <Typescript /> },
-      { icon: <PlanetScale /> },
-      { icon: <ReactQuery /> },
-      { icon: <TailwindCSS /> },
-      { icon: <RadixUi /> }
+      { icon: 'NextJs' },
+      { icon: 'Typescript' },
+      { icon: 'TailwindCSS' },
+      { icon: 'RadixUi' },
+      { icon: 'ReactQuery' },
+      { icon: "PlanetScale"}
    ])
 
    const items = [
