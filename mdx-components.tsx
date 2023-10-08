@@ -18,7 +18,6 @@ export function useMDXComponents(components: MDXComponents): MDXComponents {
       ul: ({ children }) => (
          <ul className="list-inside list-disc text-secondary_text">{children}</ul>
       ),
-
       ...components
    }
 }

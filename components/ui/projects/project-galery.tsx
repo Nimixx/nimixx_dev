@@ -13,7 +13,7 @@ export function ProjectGalery() {
 
    return (
       <Button onClick={handleOpenGalery} variant="link" size="sm" className="text-sm">
-         <Icon name="Galery" className="w-6 h-6" />
+         <Icon name="Galery" size='md' />
       </Button>
    )
 }

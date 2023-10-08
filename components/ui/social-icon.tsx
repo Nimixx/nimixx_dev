@@ -24,7 +24,7 @@ export function SocialIcons({className }: SocialIconProps) {
                   href={socialIcon.href}
                   className={tw('transition hover:text-accent_3', className)}
                >
-                  <Icon name={socialIcon.icon} />
+                  <Icon name={socialIcon.icon} size='sm' />
                </Link>
             </li>
          ))}

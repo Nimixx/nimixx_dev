@@ -8,6 +8,7 @@ import { ProjectImage } from '@/components/ui/projects/project-image'
 import { IconAside } from '@/components/ui/projects/icon-aside'
 import MDXContent from '@/content/projects/nimixx.mdx'
 import { ProjectRoadmap } from '@/components/ui/projects/Project-Roadmap'
+import { Icon } from '@/components/ui/Icon'
 
 export default function page() {
    const [links] = useState([
@@ -25,7 +26,7 @@ export default function page() {
 
    const items = [
       { text: 'Build project page with mdx & reuseable layouts', isChecked: true },
-      { text: 'Implement issue tracking with git repo', isChecked: false },
+      { text: 'Build own reuseable svg icon pack', isChecked: true },
       { text: 'Address bugs and issues', isChecked: false }
    ]
 
@@ -49,6 +50,7 @@ export default function page() {
                <section className="w-full space-y-4 rounded-lg border border-primary_light/50 bg-primary_light/20 p-5">
                   <MDXContent />
                   <ProjectRoadmap items={items} />
+                  <Icon name="Github" />
                </section>
             </article>
          </section>

@@ -1,14 +1,17 @@
 import React from 'react'
-import { twMerge as tw } from 'tailwind-merge'
 import * as icons from '../svgs/index'
-import { IconNames } from '../svgs/index'
+import { IconNames } from '../svgs/types'
+import { IconSizes } from '../svgs/types'
+import { cn } from '@/lib/utils'
+import { getSizeClass } from '../svgs/iconSizes'
 
 type IconProps = {
    name?: IconNames | React.ReactNode
    className?: string
+   size?: IconSizes
 }
 
-export function Icon({ name, className }: IconProps) {
+export function Icon({ name, className, size }: IconProps) {
    let SelectedIcon
 
    const isValidIconName = (name: string): name is IconNames => {
@@ -24,9 +27,11 @@ export function Icon({ name, className }: IconProps) {
       return null
    }
 
+   const sizeClass = size ? getSizeClass(size) : ''
+
    return (
       <i>
-         <SelectedIcon className={tw(`h-4 w-4 text-inherit`, className)} />
+         <SelectedIcon className={cn(sizeClass, className)} />
       </i>
    )
 }

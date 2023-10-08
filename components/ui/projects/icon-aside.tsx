@@ -17,7 +17,7 @@ type IconListProps = {
 
 export function IconAside({ icons, forLinks, galery }: IconListProps) {
    return (
-      <div className="flex items-center rounded-md border border-primary_light/50 bg-primary_light/20 px-4 py-3 w-64">
+      <div className="flex w-64 items-center rounded-md border border-primary_light/50 bg-primary_light/20 px-4 py-3">
          <ul className="flex space-x-4">
             {icons.map((icon, index) => (
                <li key={index}>
@@ -25,11 +25,12 @@ export function IconAside({ icons, forLinks, galery }: IconListProps) {
                      <Link href={icon.href}>
                         <Icon
                            name={icon.icon}
-                           className="w-6 h-6 text-secondary_text transition hover:text-primary_text"
+                           size='md'
+                           className="text-secondary_text transition hover:text-primary_text"
                         />
                      </Link>
                   ) : (
-                     <Icon name={icon.icon} className="w-6 h-6" />
+                     <Icon name={icon.icon} size='md' />
                   )}
                </li>
             ))}
