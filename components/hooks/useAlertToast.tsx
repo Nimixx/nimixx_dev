@@ -1,6 +1,5 @@
 import { useToast } from '@/components/ui/use-toast'
-import { Icon } from '../ui/icon'
-import { AlertIcon } from '../svgs'
+import { Icon } from '../svgs/Icon'
 
 type AlertToastProps = {
    message: string
@@ -17,7 +16,7 @@ export const useAlertToast = () => {
          title,
          description: (
             <div className="flex items-center">
-               <Icon icon={<AlertIcon />} className="mr-2 text-xl text-red-400" />
+               <Icon name="AlertIcon" className="mr-2 w-5 h-5 text-red-400" />
                <span>{message}</span>
             </div>
          )

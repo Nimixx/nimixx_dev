@@ -1,7 +1,6 @@
 import React from 'react'
 import { Button } from '../button'
-import { Icon } from '../icon'
-import { Galery } from '@/components/svgs'
+import { Icon } from '@/components/svgs/Icon'
 import { useAlertToast } from '@/components/hooks/useAlertToast'
 
 export function ProjectGalery() {
@@ -14,7 +13,7 @@ export function ProjectGalery() {
 
    return (
       <Button onClick={handleOpenGalery} variant="link" size="sm" className="text-sm">
-         <Icon icon={<Galery />} className="text-2xl" />
+         <Icon name="Galery" className="w-6 h-6" />
       </Button>
    )
 }
