@@ -28,7 +28,7 @@ export function FullNav() {
             <Button
                variant="link"
                size="link"
-               className="flex items-center gap-2 hover:text-accent_3"
+               className="flex items-center gap-2 text-secondary_text hover:text-accent_3"
                onMouseEnter={handleWorkClick}
             >
                Work{' '}
