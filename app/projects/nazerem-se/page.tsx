@@ -11,7 +11,7 @@ import MDXContent from '@/content/projects/nazerem-se.mdx'
 
 import { ProjectRoadmap } from '@/components/ui/projects/Project-Roadmap'
 
-export default function page() {
+export default function Page() {
    const [links] = useState([
       { icon: 'Github', href: '/' },
       { icon: 'LinkIcon', href: '/' }

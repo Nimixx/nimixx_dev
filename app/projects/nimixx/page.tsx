@@ -10,7 +10,7 @@ import MDXContent from '@/content/projects/nimixx.mdx'
 import { ProjectRoadmap } from '@/components/ui/projects/Project-Roadmap'
 import { Icon } from '@/components/ui/Icon'
 
-export default function page() {
+export default function Page() {
    const [links] = useState([
       { icon: 'Github', href: '/' },
       { icon: 'LinkIcon', href: '/' }

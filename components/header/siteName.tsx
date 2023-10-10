@@ -7,7 +7,7 @@ type LogoProps = {
 export function SiteName({ SiteName }: LogoProps) {
    return (
       <Link href="/">
-         <h2 className="text-accent_1 hover:text-primary_text text-xl font-bold uppercase transition">
+         <h2 className="text-accent_3 hover:text-secondary text-xl font-bold uppercase transition">
             {SiteName}
          </h2>
       </Link>

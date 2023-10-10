@@ -1,5 +1,5 @@
 import React from 'react'
-import { Hero } from '@/components/content/homepage/hero/hero'
+import { HeroSection as Hero } from '@/components/content/homepage/hero/HeroSection'
 
 export default function page() {
    return (
