@@ -29,7 +29,6 @@ export function EmailBtn() {
          size="sm"
          onClick={copyToClipboard}
          disabled={isCopied}
-         className="hover:bg-secondary_hover bg-secondary text-black"
       >
          {isCopied ? (
             <Icon name="EmailLock" className="mr-2 w-5 h-5" />
