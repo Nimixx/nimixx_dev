@@ -4,7 +4,8 @@ import Image from 'next/image'
 export function SiteName() {
    return (
       <Link href="/">
-           <Image
+         <Image
+            className="w-8"
             src="/images/nimixx.svg"
             alt="Picture of the author"
             width={35}
