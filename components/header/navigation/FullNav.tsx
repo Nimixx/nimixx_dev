@@ -10,7 +10,7 @@ import { DropdownWork } from './DropdownWork'
 
 export function FullNav() {
    const currentPath = path()
-   const links = [{ href: '/bio', label: 'Bio' }]
+   const links = [{ href: '/stuck', label: 'Stuck' }]
 
    const [isWorkOpen, setIsWorkOpen] = useState(false)
 

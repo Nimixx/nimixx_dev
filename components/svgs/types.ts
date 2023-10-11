@@ -22,5 +22,9 @@ export type IconNames =
    | 'Galery'
    | 'AlertIcon'
    | 'PlanetScale'
+   | 'MongoDb'
+   | 'Figma'
+   | 'AffinityDesigner'
+   | 'Sketch'
 
 export type IconSizes = 'xs' | 'sm' | 'md' | 'lg' | 'xl'

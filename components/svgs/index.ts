@@ -15,6 +15,12 @@ export { default as X } from './icons/socials/x.svg'
 export { default as LinkedIn } from './icons/socials/linkedin.svg'
 export { default as Youtube } from './icons/socials/youtube.svg'
 
+// Exports design svg
+export { default as Figma } from './icons/design/figma.svg'
+export { default as AffinityDesigner } from './icons/design/affinitydesigner.svg'
+export { default as Sketch } from './icons/design/sketch.svg'
+
+
 // Exports tech svg
 export { default as CodeSquare } from './icons/tech/code-square.svg'
 export { default as NextJs } from './icons/tech/nextjs-white.svg'
@@ -25,6 +31,7 @@ export { default as Firebase } from './icons/tech/firebase.svg'
 export { default as RadixUi } from './icons/tech/radixui.svg'
 export { default as ReactQuery } from './icons/tech/react-query.svg'
 export { default as PlanetScale } from './icons/tech/planetscale.svg'
+export { default as MongoDb } from './icons/tech/mongo-db.svg'
 
 // Exports food & cook svg
 export { default as FastFood } from './icons/food-cook/fast-food.svg'
