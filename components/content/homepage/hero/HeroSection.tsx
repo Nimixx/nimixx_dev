@@ -6,7 +6,7 @@ import { CallActions } from './CallActions'
 
 export function HeroSection() {
    return (
-      <Content className="flex w-full flex-col items-center gap-4 pt-4 md:pt-10 lg:flex-row lg:justify-between lg:pt-24">
+      <Content className="flex w-full justify-center flex-col items-center gap-4 pt-4 md:pt-10 lg:flex-row lg:justify-between lg:pt-36">
          <article className="space-y-8">
             <Title />
             <Describe />

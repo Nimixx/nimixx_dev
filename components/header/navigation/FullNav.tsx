@@ -6,7 +6,7 @@ import { twMerge as tw } from 'tailwind-merge'
 import { usePathname as path } from 'next/navigation'
 import { Icon } from '@/components/ui/Icon'
 import { Button } from '@/components/ui/button'
-import { DropDown } from './dropdown'
+import { DropdownWork } from './DropdownWork'
 
 export function FullNav() {
    const currentPath = path()
@@ -37,7 +37,7 @@ export function FullNav() {
                   className={`transition-transform ${isWorkOpen ? 'rotate-180' : 'rotate-0'}`}
                />
             </Button>
-            {isWorkOpen && <DropDown closeDropdown={closeDropdown} isDropdownOpen />}
+            {isWorkOpen && <DropdownWork closeDropdown={closeDropdown} isDropdownOpen />}
          </section>
          <ul className="hidden items-center gap-4 lg:flex">
             {links.map((link, index) => (

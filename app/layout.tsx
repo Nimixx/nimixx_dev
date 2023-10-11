@@ -2,7 +2,7 @@ import './globals.css'
 
 import type { Metadata } from 'next'
 import { Open_Sans } from 'next/font/google'
-import { Header } from '../components/header/header'
+import { Header } from '@/components/header/Header'
 import { Toaster } from 'sonner'
 
 const open_sans = Open_Sans({ subsets: ['latin'] })

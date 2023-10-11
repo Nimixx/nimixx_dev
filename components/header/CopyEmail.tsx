@@ -5,7 +5,7 @@ import { Button } from '../ui/button'
 import { useSuccessToast } from '../hooks/useSuccessToast'
 import { Icon } from '../ui/Icon'
 
-export function EmailBtn() {
+export function CopyEmail() {
    const { successToast } = useSuccessToast()
 
    const email = 'tadeas.thelen@proton.me'

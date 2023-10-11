@@ -1,14 +1,10 @@
 import Link from 'next/link'
 
-type LogoProps = {
-   SiteName: string
-}
-
-export function SiteName({ SiteName }: LogoProps) {
+export function SiteName() {
    return (
       <Link href="/">
-         <h2 className="text-accent_3 hover:text-secondary text-xl font-bold uppercase transition">
-            {SiteName}
+         <h2 className="text-xl font-bold uppercase text-accent_3 transition hover:text-secondary">
+            nimixx.dev
          </h2>
       </Link>
    )

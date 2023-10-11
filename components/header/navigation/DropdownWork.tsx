@@ -12,7 +12,7 @@ type DropDownProps = {
    isDropdownOpen: boolean
 }
 
-export function DropDown({ closeDropdown, isDropdownOpen }: DropDownProps) {
+export function DropdownWork({ closeDropdown, isDropdownOpen }: DropDownProps) {
    const dropdownRef = useRef<HTMLDivElement>(null)
    useClickOutside({ ref: dropdownRef, callback: closeDropdown })
 
