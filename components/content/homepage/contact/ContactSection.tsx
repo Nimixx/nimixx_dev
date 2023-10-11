@@ -3,6 +3,7 @@
 import React from 'react'
 import { Content } from '@/components/layouts/content'
 import { Icon } from '@/components/ui/Icon'
+import { ContactForm } from './ContactForm'
 
 export function ContactSection() {
    return (
@@ -33,7 +34,9 @@ export function ContactSection() {
                </p>
             </div>
          </section>
-         <section className="mx-auto w-2/3 rounded-xl border border-primary_light/80 bg-primary_light/20 p-5">
+         <section className="mx-auto flex w-2/3 justify-between rounded-xl border border-primary_light/80 bg-primary_light/20 p-5">
+            text
+            <ContactForm />
          </section>
       </Content>
    )
