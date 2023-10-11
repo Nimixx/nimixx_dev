@@ -34,7 +34,7 @@ export default function Page() {
       <Projects className="mx-auto lg:w-3/5">
          <section className="space-y-10 py-10">
             <article className="flex space-x-10">
-               <aside className="sticky top-10 h-96 space-y-4">
+               <aside className="sticky top-10 h-96 space-y-4 -z-10">
                   <h1 className="text-2xl font-extrabold uppercase">Nimixx.dev</h1>
                   <ProjectImage
                      width={255}
