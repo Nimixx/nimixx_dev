@@ -27,5 +27,7 @@ export type IconNames =
    | 'AffinityDesigner'
    | 'Sketch'
    | 'Framer'
+   | 'React'
+   | 'Wordpress'
 
 export type IconSizes = 'xs' | 'sm' | 'md' | 'lg' | 'xl'

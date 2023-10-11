@@ -33,6 +33,8 @@ export { default as RadixUi } from './icons/tech/radixui.svg'
 export { default as ReactQuery } from './icons/tech/react-query.svg'
 export { default as PlanetScale } from './icons/tech/planetscale.svg'
 export { default as MongoDb } from './icons/tech/mongo-db.svg'
+export { default as React } from './icons/tech/react.svg'
+export { default as Wordpress } from './icons/tech/wordpress.svg'
 
 // Exports food & cook svg
 export { default as FastFood } from './icons/food-cook/fast-food.svg'
