@@ -19,6 +19,7 @@ export { default as Youtube } from './icons/socials/youtube.svg'
 export { default as Figma } from './icons/design/figma.svg'
 export { default as AffinityDesigner } from './icons/design/affinitydesigner.svg'
 export { default as Sketch } from './icons/design/sketch.svg'
+export { default as Framer } from './icons/design/framer.svg'
 
 
 // Exports tech svg

@@ -26,5 +26,6 @@ export type IconNames =
    | 'Figma'
    | 'AffinityDesigner'
    | 'Sketch'
+   | 'Framer'
 
 export type IconSizes = 'xs' | 'sm' | 'md' | 'lg' | 'xl'
