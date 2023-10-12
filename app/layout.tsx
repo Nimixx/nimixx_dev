@@ -2,8 +2,9 @@ import './globals.css'
 
 import type { Metadata } from 'next'
 import { Open_Sans } from 'next/font/google'
-import { Header } from '@/components/header/Header'
+import { Header } from '@/components/header/header'
 import { Toaster } from 'sonner'
+import { Provider } from 'react-wrap-balancer'
 
 const open_sans = Open_Sans({ subsets: ['latin'] })
 
@@ -18,11 +19,15 @@ type LayoutProps = {
 
 export default function RootLayout({ children }: LayoutProps) {
    return (
-      <html lang="en" className='scroll-smooth'>
-         <body className={`${open_sans.className} bg-gradient-to-b from-primary min-h-screen to-primary_dark text-primary_text`}>
-            <Header />
-            {children}
-            <Toaster position="bottom-center" />
+      <html lang="en" className="scroll-smooth">
+         <body
+            className={`${open_sans.className} debug-screens min-h-screen bg-gradient-to-b from-primary to-primary_dark text-primary_text`}
+         >
+            <Provider>
+               <Header />
+               {children}
+               <Toaster position="bottom-center" />
+            </Provider>
          </body>
       </html>
    )

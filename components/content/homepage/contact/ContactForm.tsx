@@ -17,7 +17,7 @@ export function Input({ id, type, placeholder }: InputProps) {
 
 export function ContactForm() {
    return (
-      <div className="w-full max-w-xs">
+      <div className="w-full">
          <form>
             <div className="pb-4">
                <label htmlFor="username" className="mb-2 block text-sm">
@@ -41,10 +41,10 @@ export function ContactForm() {
                <label htmlFor="message" className="mb-2 block text-sm">
                   Your message
                </label>
-               <textarea name="" id="message" className='w-full h-24 appearance-none rounded-md border border-primary_light bg-primary_light/10 px-3 py-2 leading-tight text-secondary_text shadow focus:border-transparent focus:outline-none focus:ring-2 focus:ring-secondary'></textarea>
+               <textarea name="" id="message" placeholder='Your message...' className='w-full h-24 appearance-none rounded-md border border-primary_light bg-primary_light/10 px-3 py-2 leading-tight text-secondary_text shadow focus:border-transparent focus:outline-none focus:ring-2 focus:ring-secondary'></textarea>
             </div>
             <Button type="submit" className="w-full">
-               Submit form
+               Submit
             </Button>
          </form>
       </div>

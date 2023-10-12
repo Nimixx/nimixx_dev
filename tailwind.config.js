@@ -79,5 +79,5 @@ module.exports = {
          }
       }
    },
-   plugins: [require('@tailwindcss/typography', '@tailwindcss/forms')]
+   plugins: [require('tailwindcss-debug-screens', '@tailwindcss/typography', '@tailwindcss/forms')]
 }

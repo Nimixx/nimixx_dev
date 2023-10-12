@@ -1,4 +1,4 @@
-import { SiteName } from './SiteName'
+import { SiteName } from './siteName'
 import { FullNav } from './navigation/FullNav'
 import { SocialIcons } from '../ui/social-icon'
 import { CopyEmail } from './CopyEmail'

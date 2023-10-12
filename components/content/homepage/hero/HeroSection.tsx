@@ -6,8 +6,8 @@ import { CallActions } from './CallActions'
 
 export function HeroSection() {
    return (
-      <Content className="flex w-full justify-center flex-col items-center gap-4 pt-4 md:pt-10 lg:flex-row lg:justify-between lg:pt-36">
-         <article className="space-y-8">
+      <Content className="flex w-full flex-col items-center justify-center md:pt-10 lg:flex-row lg:justify-between gap-16 py-8 md:py-16">
+         <article className="flex flex-col gap-8 items-center justify-center lg:justify-start lg:items-start">
             <Title />
             <Describe />
             <CallActions />
@@ -17,7 +17,8 @@ export function HeroSection() {
             alt="Picture of the author"
             width={640}
             height={500}
-            className="w-full lg:w-1/2"
+            priority
+            className="hidden lg:block lg:w-2/5 2xl:w-2/4"
          />
       </Content>
    )

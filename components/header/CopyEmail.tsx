@@ -31,11 +31,11 @@ export function CopyEmail() {
          disabled={isCopied}
       >
          {isCopied ? (
-            <Icon name="EmailLock" className="mr-2 w-5 h-5" />
+            <Icon name="EmailLock" className="md:mr-2 w-5 h-5" />
          ) : (
-            <Icon name="EmailPlus" className="mr-2 w-5 h-5" />
+            <Icon name="EmailPlus" className="md:mr-2 w-5 h-5" />
          )}
-         Contact me
+         <p className='hidden md:block'>Contact me</p>
       </Button>
    )
 }
