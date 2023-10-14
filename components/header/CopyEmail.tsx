@@ -13,8 +13,8 @@ export function CopyEmail() {
 
    const copyToClipboard = () => {
       const message = 'Email was copied to clipboard!'
-      successToast({ message})
-    
+      successToast({ message })
+
       navigator.clipboard.writeText(email)
       console.log('copied')
       setIsCopied(!isCopied)
@@ -25,17 +25,13 @@ export function CopyEmail() {
    }
 
    return (
-      <Button
-         size="sm"
-         onClick={copyToClipboard}
-         disabled={isCopied}
-      >
+      <Button size="sm" onClick={copyToClipboard} disabled={isCopied}>
          {isCopied ? (
-            <Icon name="EmailLock" className="md:mr-2 w-5 h-5" />
+            <Icon name="EmailLock" className="h-5 w-5 md:mr-2" />
          ) : (
-            <Icon name="EmailPlus" className="md:mr-2 w-5 h-5" />
+            <Icon name="EmailPlus" className="h-5 w-5 md:mr-2" />
          )}
-         <p className='hidden md:block'>Contact me</p>
+         <p className="hidden md:block">Contact me</p>
       </Button>
    )
 }
