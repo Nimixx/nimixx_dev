@@ -56,6 +56,7 @@ export function ContactForm() {
                   name="message"
                   id="message"
                   placeholder="Your message..."
+                  required
                   className="h-24 w-full appearance-none rounded-md border border-primary_light bg-primary_light/10 px-3 py-2 leading-tight text-secondary_text shadow focus:border-transparent focus:outline-none focus:ring-2 focus:ring-secondary"
                />
                <ValidationError prefix="Message" field="message" errors={state.errors} />

@@ -5,6 +5,7 @@ import { Open_Sans } from 'next/font/google'
 import { Header } from '@/components/header/header'
 import { Toaster } from 'sonner'
 import { Provider } from 'react-wrap-balancer'
+import { Footer } from '@/components/footer/Footer'
 
 const open_sans = Open_Sans({ subsets: ['latin'] })
 
@@ -26,6 +27,7 @@ export default function RootLayout({ children }: LayoutProps) {
             <Provider>
                <Header />
                {children}
+               <Footer />
                <Toaster position="bottom-center" />
             </Provider>
          </body>
