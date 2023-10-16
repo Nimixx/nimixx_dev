@@ -9,8 +9,8 @@ import Indicator from './Indicator'
 
 export default function Navigation() {
    return (
-      <NavigationMenu.Root className="relative">
-         <NavigationMenu.List className="flex">
+      <NavigationMenu.Root className="relative w-full">
+         <NavigationMenu.List className="flex list-none list-inside overflow-hidden">
             <Work />
             <Stuck />
             <Indicator />

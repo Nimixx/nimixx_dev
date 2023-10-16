@@ -1,10 +1,11 @@
 'use client'
 
 import React from 'react'
-import Link from 'next/link'
 
 import * as NavigationMenu from '@radix-ui/react-navigation-menu'
 import NavContent from './layouts/NavContent'
+import TechStuck from './links/TechStuck'
+import DesignStuck from './links/DesignStuck'
 
 export default function Stuck() {
    return (
@@ -12,15 +13,9 @@ export default function Stuck() {
          <NavigationMenu.Trigger className="rounded-md px-4 py-1 transition-colors hover:bg-primary_light">
             Stuck
          </NavigationMenu.Trigger>
-         <NavContent>
-            <NavigationMenu.Link>
-               <Link
-                  href="/work/"
-                  className="block px-4 py-2 transition-colors hover:bg-primary_light"
-               >
-                  Stuck
-               </Link>
-            </NavigationMenu.Link>
+         <NavContent className='flex-col'>
+            <TechStuck />
+            <DesignStuck />
          </NavContent>
       </NavigationMenu.Item>
    )

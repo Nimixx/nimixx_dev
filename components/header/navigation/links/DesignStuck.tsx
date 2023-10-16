@@ -9,11 +9,11 @@ import * as NavigationMenu from '@radix-ui/react-navigation-menu'
 import { useRef, useEffect } from 'react'
 import { gsap } from 'gsap'
 
-export default function PersonalSite() {
-   const listRef = useRef<HTMLLIElement>(null)
+export default function DesignStuck() {
+   const itemRef = useRef<HTMLLIElement>(null)
 
    useEffect(() => {
-      const list = listRef.current
+      const list = itemRef.current
 
       if (list) {
          const tl = gsap.timeline()
@@ -32,16 +32,12 @@ export default function PersonalSite() {
    }, [])
 
    return (
-      <li
-         ref={listRef}
-         className="h-32 w-48 -translate-x-20 rounded-md border border-primary_light/80 bg-primary_light/20  p-4 opacity-0 hover:bg-primary_light/40"
-      >
+      <li ref={itemRef} className="h-32 w-80 rounded-md border border-primary_light/80 bg-gradient-to-r from-green-300 to-purple-400 opacity-0 translate-x-20">
          <NavigationMenu.Link asChild>
-            <Link href="/projects/nimixx">
-               <article className="flex h-full w-full flex-col items-start justify-end gap-2">
-                  <Icon className="h-6 w-6 text-amber-400" name="CodeSquare" />
-                  <h3 className="text-lg font-bold">Nimixx.dev</h3>
-                  <p className="text-sm text-secondary_text">Small personal app</p>
+            <Link href="/projects/nazerem-se">
+               <article className="flex h-full w-full items-center justify-center gap-2 p-4">
+                  <Icon className="h-8 w-8" name="Figma" />
+                  <h3 className="text-xl font-bold text-neutral-900">DesignStuck</h3>
                </article>
             </Link>
          </NavigationMenu.Link>
